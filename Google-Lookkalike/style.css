@@ -1,0 +1,83 @@
+body{
+    font-family: Arial,sans-serif;
+}
+
+nav {
+    text-align: right;
+}
+
+.menu-item{
+    font-size: 13px;
+    color: rgba(0,0,0,0.87);
+    text-decoration: none;
+    position: relative;
+    top: -16px ;
+    margin-right: 16px;
+}
+
+.menu-item:hover{
+    text-decoration: underline;
+}
+
+#dropdown-menu {
+    top : -10px;
+    position: relative;
+    margin-right: 16px;
+}
+
+#profileimage{
+    width: 48px;
+    height: 48px;
+    border-radius: 17px;
+}
+
+section{
+    text-align: center;
+    width: 582px;
+}
+
+#search-box{
+    width: 100%;
+    color: #222;
+    border: 1px solid #dfe1e5;
+    font-size: 13px;
+    padding: 14px;
+    border-radius: 24px;
+}
+
+#input-wrapper > img{
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 28px;
+}
+
+#search-box:hover{
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+    border-color: rgba(223, 225, 229, 0);
+}
+
+#search-box:focus{
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+    border-color: rgba(223, 225, 229, 0);
+}
+
+button{
+    background-color: #f2f2f2;
+    color: #5F6368;
+    font-size: 14px;
+    height: 36px;
+    padding: 0 16px;
+    background-image: linear-gradient(top, #f5f5f5, #f1f1f1);
+    border: 1px solid transparent;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0);
+    color: #222;
+}
+
+button:hover{
+    background-image: linear-gradient(top, #f8f8f8, #f1f1f1);
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    color: #222
+
+}
