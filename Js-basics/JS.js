@@ -30,4 +30,60 @@ const interestRate=0.3;
 interestRate=1; // will give error
 console.log(interestRate);
 
-//
+// Primitive/ Value Types
+/*String
+Number (all the floating/ real numbers are reffered to as numbers)
+Boolean
+undefined
+null( where we want to clear the value of a variable)
+
+jS is dynamic language i.e. can be changed at run time
+*/
+
+//typeof( used to find datatype of the opearator)
+typeof na // o/p->"string"
+typeof isApproved // o/p -> boolean
+/*
+Undefined is type as well as a value
+*/
+
+
+//Refference types
+/*
+Ojects
+when you are creating similar type of variables
+makes code cleaner
+ works in key,value pairs
+*/
+
+let n='Mos';
+let age = 30;
+
+let person={
+    n:'Mosh',
+    age: 30
+}
+console.log(person); 
+
+//updatevalues in objects using dot notation
+ person.age= 17;
+
+ //printing specific value of object
+console.log(person.n);
+
+//update values using Bracket Notation
+person['n'] ='Mary';
+
+//Array ( treated as an bject in JS)
+let slectedColor= ['red','blue'];
+slectedColor[2]=1;
+console.log(slectedColor);
+
+//Functions- building blocks in js
+function greet(){
+    //body of func(define logic)
+    console.log('Hello World');
+}
+
+//function calling
+greet();
