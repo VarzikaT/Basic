@@ -1,4 +1,5 @@
 /*
+used to web pages alive and program here are knoown as scripts
 Widely used by big companies like netflix, pypal to built their internal
  We can use it build full-blown web o mobile apps& real time networking applications like
  chats & video
@@ -10,7 +11,9 @@ JavaScript- Programming Language
 As practtcise it is best to put the javascript script at the end of the body tags bcause:-
 1. Browser gets engaged in parsing the JS code if the code is at the strrt & 
 ultimately delivers the code late(bad user experienecE).
-2. 
+2.
+
+it has Same origin policy(one website cant access other other one)
 */
 console.log('Hello World');
 /*
@@ -80,10 +83,60 @@ slectedColor[2]=1;
 console.log(slectedColor);
 
 //Functions- building blocks in js
+//set of statemenst that either perform a task or calculate a value
 function greet(){
     //body of func(define logic)
     console.log('Hello World');
 }
 
+function greet(name){
+    console.log('Hello'+name);
+}
 //function calling
 greet();
+greet('John'); //function with argument
+
+//Type of function
+/*
+  function square(number){
+      return number*number;
+  }
+
+  console.log(square(2))
+
+  console.log() is also a function  call 
+  which awokes the log function
+*/
+
+//Alert function
+alert('Hello');
+alert('World');
+alert(3 +
+    1
+    + 2);
+//'use strict' is located at the top of a script so that the code  works in modern way
+
+//prompt accepts two argumenst where it asks user to input the value 
+let age1 = prompt('How old are you?',100);
+
+//string='0' will be teated as true in js 
+//undefined values can't be compared and undefined values are converted into NaN & returns false
+if (year == 2015) {
+    alert( 'You guessed it right!' );
+  } else {
+    alert( 'How can you be so wrong?' ); // any value except 2015
+  }
+  //Nested ? conditional statements
+  let accessAllowed = (age > 18) ? true : false;
+  let message = (age < 3) ? 'Hi, baby!' :
+  (age < 18) ? 'Hello!' :
+  (age < 100) ? 'Greetings!' :
+  'What an unusual age!';
+
+  let firstName = "";
+let lastName = "";
+let nickName = "SuperCoder";
+
+// the below code is used to print the variable which has value
+//it will chck for value using or...ASA it sees a value true cond then stops
+alert( firstName || lastName || nickName || "Anonymous"); // SuperCoder
