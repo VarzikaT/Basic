@@ -140,3 +140,17 @@ let nickName = "SuperCoder";
 // the below code is used to print the variable which has value
 //it will chck for value using or...ASA it sees a value true cond then stops
 alert( firstName || lastName || nickName || "Anonymous"); // SuperCoder
+//this will show up Anonymous if no values are there
+
+//Short-circuit evaluation
+true || alert("not printed");
+//here the operator is usually used to print the value if the condition is falsy
+//here it will print the alert message if cond is false otherwise runs the condition
+//and doesn't runs the alert message 
+
+//nullish coalescing operator (??)
+alert(user ?? "Anony");
+//show user & if user's value is undefined or null prints anony || returns the first truthy value.
+//?? returns the first defined value.
+
+//functions are used to avoid code duplication
