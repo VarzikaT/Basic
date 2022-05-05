@@ -1,0 +1,14 @@
+.card-container{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    /* padding: 10px; */
+    background-color: pink;
+    flex-wrap: wrap;
+}
+
+.dash-container{
+    background-color: blue;
+    width: 100vw;
+    display: flex;
+}
