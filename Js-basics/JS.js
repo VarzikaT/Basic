@@ -154,3 +154,5 @@ alert(user ?? "Anony");
 //?? returns the first defined value.
 
 //functions are used to avoid code duplication
+/*use strict is written at the top of code so that we can use the entire code in modern way, 
+there is no directive such as to cancel use strict mode */
