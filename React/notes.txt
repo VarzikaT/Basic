@@ -1,0 +1,3 @@
+install react developer tools extension which lists all the hooks and componenst we have used. 
+var keyword has a problem where same variable can be declared multiple times but in case of 
+let keyword you can only declare a variable(same name) once.
