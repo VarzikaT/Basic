@@ -11,5 +11,4 @@ comes it creats a event loop to perform smoothly.
 * even though it s an single threaded language it is able to get multiple workers using the libuv library ....it 
 gives us the concept of Asynchronous ( helps in acheiving it). 
 Libuv is a library built using c language which provides a kernel and this kernel has multiple threads.(so basically
-these workers are threads only).
-This functionality and principles make Node js fast and flexible.
+these workers are threads only)
