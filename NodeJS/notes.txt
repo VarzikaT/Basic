@@ -12,3 +12,8 @@ comes it creats a event loop to perform smoothly.
 gives us the concept of Asynchronous ( helps in acheiving it). 
 Libuv is a library built using c language which provides a kernel and this kernel has multiple threads.(so basically
 these workers are threads only)
+
+
+npm init -y
+npm i express
+npm i --save-dev nodemon
