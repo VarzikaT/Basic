@@ -1,0 +1,12 @@
+*Single- threaded .......that is there is only one thread which takes the request from the server and sends
+the response to the server but when there is case of mutliple machines requesting for data....how does No mangaes?
+* NodeJs works on two basic princples :-
+1) Non-Blocking I/O : Here it doesn't lets an client wait or blocks a server which is performing late.....what it soes 
+is it has multiple workers for the processing so when one client requests service from the thread it assigns a worker 
+which ultimately feeds the data from the server so mean while the thread is free which can handle the requests from 
+the other clients by assigning workers to each of them. But, there are cases when the Client requests multiple calculat
+in that case of CPU intensuve work the thread is needed therefire we dont prefer using Node there.
+2) Asynchronous - here when the thread is assigining work to the other workers and the result from the previous worker
+comes it creats a event loop to perform smoothly.
+* even though it s an single threaded language it is able to get multiple workers using the libuv library ....it 
+gives us the concept of Asynchronous ( helps in acheiving it). 
