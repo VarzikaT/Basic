@@ -3,3 +3,4 @@
 let keyword you can only declare a variable(same name) once.
 *you can declare a variable ab out the function starting in the App.js and you can call that variable 
 using {} this for example the name is var we can call it like <p> Hello {var}</p>
+*single-page websites have single bundle of HTML+CSS+JS while multiple pages have their own HTML, CSS, JS bundles.
