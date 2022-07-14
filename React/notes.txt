@@ -1,3 +1,5 @@
-install react developer tools extension which lists all the hooks and componenst we have used. 
-var keyword has a problem where same variable can be declared multiple times but in case of 
+*install react developer tools extension which lists all the hooks and componenst we have used. 
+*var keyword has a problem where same variable can be declared multiple times but in case of 
 let keyword you can only declare a variable(same name) once.
+*you can declare a variable ab out the function starting in the App.js and you can call that variable 
+using {} this for example the name is var we can call it like <p> Hello {var}</p>
