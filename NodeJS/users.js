@@ -1,8 +1,10 @@
 const express =require('express')
 const router= express.Router()
 
+router.use(logger)
+
 router.get("/",(req,res)=>{
-    res.send("User List")
+    res.render("users/new",{firstName: "Test"})
 })
 
 router.get("/new",(req,res)=>{
@@ -10,7 +12,7 @@ router.get("/new",(req,res)=>{
 })
 // for creating a new user we need to create a post method
 router.post('/',(req,res)=>{
-    res.send('Create User')
+    res.send('Create User') // displays the message create user when 
 })
 // here /:id will work dynamically like for user  who have id 1,2 or anything
 // anything in the url with /1 /2 or /5678 
