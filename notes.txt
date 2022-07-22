@@ -1,0 +1,325 @@
+at least kb kya kr rhe yh tow btaaao
+kghn se poch gye idhr tum?
+okayy -
+dekh phle ek folder bna le jiske andar teri sari requests (API) hongi.
+jais emaine bnayi nodejs 
+har project ki alag alag hoti.a
+Ab?
+
+ab usme request add kr .
+
+1st APi teri saare users get krne ki thi 
+isliye name aisa aur uss API request ka 
+http verb GET type
+
+tere backend mein tune iska http 
+verb GET 
+rakha isliye ifhar bhi GET
+mismatch hoga to error aati .
+
+theek .
+haan
+
+ab url specify kr jispe call hogi.
+kaise pta chlego 
+abhi tu local pe hai na.
+haan 3000
+tow localhost:portNumber
+http bhi tow hoga?
+nahi local ke liye nahi . wo apne aap le leta.
+
+ye tera base url hai.
+yaar jaise saaari cheejein automatically
+3000 p hi kyun host hoti
+.w
+hy not 3001?
+tu krle.
+teri marzi .
+mostly 5000 pe backend krte 
+aur react ka frontend 3000 pe hota
+same time dono run honge nhi . 
+isliye 5000 aur 3000
+
+tow how to specify these url.
+
+simple hai .
+jispe tune backend start kiya wo chnage krde.
+okay 
+hmne react k frontend mei bhi kya
+
+aise hi port dia tha?
+nahi wo by default 3K PE chalta hai .
+agar wo busy tow 3001 pe.
+ab wo chnage nhi kr skte . pr backend apna
+wo kr skte na isliye backend ka hi 
+change krte hai 99% time.
+5000 krde
+.
+
+ab jo request hai uske specific path de 
+kkyuki abhi tk to base url tha
+ye APi ..
+
+
+nahi . tune code flow dekha .
+
+
+now?
+send .
+
+tune backend se yhi response bheja
+haan.
+tow ye kaam kr rhaa. 
+console dekh vscode ka
+
+iss API call me tune params 
+bhi liye tow wo tune bheje nahi isiye 
+wo undefined aa rha . bahot
+ common ero
+
+
+kyaa kr rhi .
+2 min ruko
+tune khud ka nhi dala password.
+krle ye resolve fir text kr denaa.
+tujhe dikkt h wait kr thdi der
+
+aise preshan ho rhi wo nhi dekha jaa rha
+.
+
+HR is the only option.
+usko hi call kia just abhi
+
+ya saare password try kr
+
+aage krte h
+
+.
+yh
+  kia?
+
+
+params use krnaa
+params aise specify krte hai .
+jaise tujhe kuch specific id ke against chahiye kcuh
+to params mes krdo pa
+example dikhau ?
+haan
+aaya smjh ?
+ab har cheex body pe paas nhi krte na
+aur har cheez ko body mein paas krne k liye
+POSt request use nhi kr 
+skt.e .
+.
+.
+.
+ab fresh btaa.
+okayy .
+
+dekh tujhe koi specific user ka data chahiye.
+uski id ya name tujhe pta sirf.
+tow standards ke according wo tu
+params me pass kregi .
+GET ke saath params.
+example 
+
+
+
+https://immunifyme.greythr.com/uas/
+portal/auth/login?login_challenge=615663ebf0f5400fbd2bad1f4b9de789
+
+
+isme login_challenge key ke cooresponding
+
+yh ? ka specify  krta h?
+
+aree bus data hi tow hai tune paaas kiya 
+ye request object me jayega
+wha se tu request.query.param
+aise extract kr lrnaa.
+
+
+confused af
+mujhe bta tu kya likhna 
+h usse smjh jaungi mai
+
+.
+
+
+you need to get use data aur tujhe 
+uska name pta buss.
+tow tune wo name params me paas kiye
+param buss quest object ke andar hota.
+
+
+yaar kya hibh /....itte  complex wo
+rds mt use kr ...b ol rhi hu mujhe bta krte krte
+
+
+
+i will ask
+yh kya beech beech mei jaan  buvh k krta h 
+tu
+
+kyaa krta main?
+
+params bhul jaa abhi ke liey.
+
+yh aa gya
+
+kr tow liye dono  post bh
+
+
+achaa 
+
+ab post wale me data bhej.
+body mein .
+
+konsi body??
+
+idhar.
+
+aur fir usse wha console log krwa dena.
+search kr google kr.
+kaise nikal
+
+ request mein se body ka data.
+
+tu kya dekhta nhi h mai type kr rhi
+kitta interrupt krta h...so irritating
+
+
+theek hai maaf krde 
+ab mere dimag mei nhi aa rha kuch .
+
+ttyl 
+:/
+
+15 min baad .
+OKAY.
+hm
+
+URl has two things
+URL path
+URL parameters
+
+path is amazon.com/men/
+tow isme men and shirt are path
+
+okay
+jaise yhn p users h ?
+haan. and that is required thing.
+
+
+aur second cheez hai parameters
+
+
+
+// https://www.amazon.in/Apple-iPhone-13-256GB-Product/dp/B09G9HDN4Q/ref=sr_1_1_sspa?keywords=iphone13&qid=1658219083&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExQTk4VlNERjJJVVhaJmVuY3J5cHRlZElkPUEwNDAzMzMwRVpWR1ZYM0NSQ1lOJmVuY3J5cHRlZEFkSWQ9QTA3MDA0MjJWN1lGRjFaUFcyRk0md2lkZ2V0TmFtZT1zcF9hdGYmYWN0aW9uPWNsaWNrUmVkaXJlY3QmZG9Ob3RMb2dDbGljaz10cnVl
+
+// Apple-iPhone-13-256GB-Product/dp/B09G9HDN4Q/r 
+// this is path 
+
+// ?keywords=iphone13&qid=1658219083&sr=8-1-spons&psc=1&
+// this is parameters
+// agar tu aur filter lagayegi tow aur parameters add hoonge isme
+
+parameters .are not required.
+mandatory nahi hote hai.
+jaise humne name parametr phle nhi diya tha tow error nhi aayi na.
+
+agar wohi path hota aur nhi diya hota tow aati.
+
+
+jaise abhi tu /users ke aage kuch bhhi lgaa de.
+wo path exist nhi krta tow error ayegi.
+
+
+yaar aise ek request me sb kyu kr rhi.
+sbke liye alag alag bnaa naa.
+folder kyu bnaya hai fir.
+
+sorry
+?
+2 min ruk sprint meeting chl rhi
+okayyyyyyyyyyyyyyyyyyyyyyyyyy.
+
+han ab bta vs code mei kya chnges kiye apne
+arey yaar ruk abhishek ka call
+
+?? 
+call krna btaungi kya drama hua -
+
+
+acha tow yh ? btata h 
+kru type ya nhi?
+tu bgta 
+ab tb hi type krungi
+soryyyyy please type.
+
+yh ? btata h ki data milega aage?
+haan but tu thoda glt smjh rhi.
+yh parameters honge aage yh sugges krta?
+agar wo parameter mile ya na mile koi problem nhi.
+
+optional hote . not necessary required ki dena hi hai
+parameter name kaa ya fir age ka.
+tum 10 parameter bna lo backend mein.
+fronend se sirf 2 paas kro koi problem nhi.
+baaki logic diffent hota sbka. 
+
+arey itti kahani kyu bta rhe yh btaao ? 
+ka kya kaam bas
+
+
+
+URl has two things
+URL path
+URL parameters
+
+path is amazon.com/men/
+tow isme men and shirt are path
+
+okay
+jaise yhn p users h ?
+haan. and that is required thing.
+
+
+aur second cheez hai parameters
+
+
+
+// https://www.amazon.in/Apple-iPhone-13-256GB-Product/dp/B09G9HDN4Q/ref=sr_1_1_sspa?keywords=iphone13&qid=1658219083&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExQTk4VlNERjJJVVhaJmVuY3J5cHRlZElkPUEwNDAzMzMwRVpWR1ZYM0NSQ1lOJmVuY3J5cHRlZEFkSWQ9QTA3MDA0MjJWN1lGRjFaUFcyRk0md2lkZ2V0TmFtZT1zcF9hdGYmYWN0aW9uPWNsaWNrUmVkaXJlY3QmZG9Ob3RMb2dDbGljaz10cnVl
+
+// Apple-iPhone-13-256GB-Product/dp/B09G9HDN4Q/r 
+// this is path 
+
+// ?keywords=iphone13&qid=1658219083&sr=8-1-spons&psc=1&
+// this is parameters
+// agar tu aur filter lagayegi tow aur parameters add hoonge isme
+
+parameters .are not required.
+mandatory nahi hote hai.
+jaise humne name parametr phle nhi diya tha tow error nhi aayi na.
+
+agar wohi path hota aur nhi diya hota tow aati.
+
+
+jaise abhi tu /users ke aage kuch bhhi lgaa de.
+wo path exist nhi krta tow error ayegi.
+
+
+itnaaa.
+
+
+maine bina age ke api call ki koi error nhi aayi.
+sun cal p aa 
+
+call pe aise nhi smjhaa sktaa abhi.
+shaam mein smjhaa dunga.
+
+
+
+
+
+
